@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Workspace | Jessica Agustin</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ec4899'%3E%3Cpath d='M13 10V3L4 14h7v7l9-11h-7z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="ja.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="antialiased selection:bg-rose-500/10 selection:text-rose-400 bg-slate-900 text-slate-100 font-sans">
+
+    <!-- App Shell Wrapper -->
+    <div class="min-h-screen flex flex-col lg:flex-row">
+        
+        <!-- ================= SIDEBAR PROFILE ENGINE ================= -->
+        <aside class="w-full lg:w-[380px] bg-slate-950/80 p-6 lg:p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800/60 backdrop-blur-xl shrink-0 lg:sticky lg:top-0 lg:h-screen overflow-y-auto">
+            
+            <div class="space-y-8">
+                
+                <!-- Profile Block -->
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <div class="relative w-24 h-24 mb-4 group">
+                        <div class="absolute inset-0 bg-rose-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-rose-600/20"></div>
+                        <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t39.30808-1/706819200_1669639554084085_1911104274643763128_n.jpg?stp=cp6_dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeG7b41JE06OArMfUBBFxM8c25ItVj27kQfbki1WPbuRBzLKPO60wqWmkNXBEqgaxIASpZd0KkALRWyqI3mb4kD7&_nc_ohc=cQ1qtqrBmwAQ7kNvwExYP6t&_nc_oc=AdohX8YowGnAethOQ16KfPqMJeK3_S0Gc31Sc6h9qGtghB1gk9nRnJ-NBg-8c0ZsIKg&_nc_zt=24&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=8YB8zUESc2uNZzxi4_k1Hw&_nc_ss=7b2a8&oh=00_Af760UpD5LbE7Wapq3emgfaVARl20eztF-rhC-zjHJ8Lew&oe=6A1D618D" 
+                             alt="Jessica Agustin" 
+                             class="relative w-full h-full object-cover rounded-2xl border border-slate-800 shadow-2xl saturate-110">
+                    </div>
+                    <h2 class="text-xl font-black text-white tracking-tight">Jessica Agustin</h2>
+                    <p class="text-rose-400 font-bold text-[10px] uppercase tracking-widest mt-1 px-2 py-0.5 bg-rose-500/10 rounded-md border border-rose-500/20 inline-block">Office Administration Specialist</p>
+                    <p class="text-slate-500 text-xs mt-1 font-medium">Class Pipeline: <span class="text-slate-300">BSOA • Year 2 (2A)</span></p>
+                </div>
+
+                <!-- ================= SEPARATED MENU BUTTONS GRID ================= -->
+                <div>
+                    <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-3">Workspace Dashboard</span>
+                    <div class="grid grid-cols-1 gap-2">
+                        
+                        <!-- Button 1: Home -->
+                        <a href="#home" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-rose-500/10 group-hover:bg-rose-500/20 text-rose-400 p-2 rounded-lg text-sm transition-colors">🏠</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Home</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Top of Workspace</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 2: Profile -->
+                        <a href="#about" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-fuchsia-500/10 group-hover:bg-fuchsia-500/20 text-fuchsia-400 p-2 rounded-lg text-sm transition-colors">👤</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">My Story</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Professional Profile</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 3: Expertise -->
+                        <a href="#expertise" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-purple-500/10 group-hover:bg-purple-500/20 text-purple-400 p-2 rounded-lg text-sm transition-colors">✨</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Expertise</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Core Competencies</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 4: Media Gallery -->
+                        <a href="#gallery" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-violet-500/10 group-hover:bg-violet-500/20 text-violet-400 p-2 rounded-lg text-sm transition-colors">🖼️</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Gallery</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Media Vault (12 Logs)</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 5: Return to Hub -->
+                        <a href="login.html" class="flex items-center gap-3.5 px-4 py-3 bg-slate-950 hover:bg-rose-950/20 border border-slate-800/80 hover:border-rose-900/50 text-slate-400 hover:text-rose-400 rounded-xl transition-all group shadow-sm mt-4">
+                            <span class="bg-slate-900 group-hover:bg-rose-500/10 text-slate-500 group-hover:text-rose-400 p-2 rounded-lg text-sm transition-colors">←</span>
+                            <div class="text-left">
+                                <p class="text-xs font-black uppercase tracking-widest">Sign Out</p>
+                                <p class="text-[10px] text-slate-600 group-hover:text-rose-400/50 font-light mt-0.5">End Active Session</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Meta -->
+            <div class="mt-8 pt-4 border-t border-slate-900 hidden lg:block text-center lg:text-left">
+                <span class="text-[9px] text-slate-600 font-mono">System Core Terminal &copy; 2026</span>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN VIEW CANVAS ================= -->
+        <main class="flex-grow p-6 sm:p-12 max-w-5xl bg-slate-900 text-slate-200" id="home">
+            
+            <!-- Dashboard Welcome Engine Header -->
+            <div class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-rose-950/40 border border-rose-500/10 p-8 md:p-10 rounded-3xl overflow-hidden mb-12 shadow-2xl">
+                <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-rose-500/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 max-w-xl">
+                    <span class="bg-rose-500/10 text-rose-400 border border-rose-500/20 font-bold text-[9px] uppercase tracking-widest px-2.5 py-1 rounded-md mb-4 inline-block">Operational Node</span>
+                    <h1 class="text-2xl md:text-3xl font-black text-white tracking-tight mb-2.5">Administrative Design & Strategy</h1>
+                    <p class="text-slate-400 text-xs md:text-sm font-light leading-relaxed">Combining an eye for visual design with rigorous business process tools to build productive, highly synchronized, and scalable office environments.</p>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE: CONNECTIVITY METADATA -->
+            <div class="mb-12 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-rose-400 mb-4 flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-rose-500 rounded-full"></span> Communication Vectors
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-xs font-light">
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Physical Base</span>
+                        <span class="text-slate-300 font-medium">📍 Cebu City, PH</span>
+                    </div>
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Digital Mail</span>
+                        <a href="mailto:jessica@example.com" class="text-slate-300 hover:text-rose-400 font-medium font-mono transition-colors">✉️ jessica@example.com</a>
+                    </div>
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Social Log</span>
+                        <span class="text-slate-300 font-medium">✨ @jessica_admin</span>
+                    </div>
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Network Hub</span>
+                        <span class="text-slate-300 font-medium">💼 Office Admin Hub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE 1: MY STORY -->
+            <div id="about" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-fuchsia-400 bg-fuchsia-950/60 border border-fuchsia-900/50 px-3 py-1 rounded-md">Category 01</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">My Story</span>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <h3 class="text-sm font-bold text-slate-200 mb-3 flex items-center gap-2">
+                        <span class="w-1.5 h-3 bg-fuchsia-500 rounded-full"></span> Narrative Profile
+                    </h3>
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed font-light">
+                        Hello! I'm Jessica. I believe that an organized office is a happy office. I love combining my eye for detail with administrative tools to help businesses run smoothly and beautifully.
+                    </p>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE 2: EXPERTISE -->
+            <div id="expertise" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-purple-400 bg-purple-950/60 border border-purple-900/50 px-3 py-1 rounded-md">Category 02</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Expertise & Stack</span>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
+                        <div class="p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl text-center">
+                            <span class="text-xs text-slate-300 font-medium block">Event Coordination</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl text-center">
+                            <span class="text-xs text-slate-300 font-medium block">Customer Relations</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl text-center">
+                            <span class="text-xs text-slate-300 font-medium block">Office Management</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl text-center">
+                            <span class="text-xs text-slate-300 font-medium block">Document Layout</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl text-center">
+                            <span class="text-xs text-slate-300 font-medium block">MS PowerPoint</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl text-center">
+                            <span class="text-xs text-slate-300 font-medium block">Digital Archiving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= VAULT ENGINE: GALLERY ARCHIVE (12 SLOTS) ================= -->
+            <div id="gallery" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-violet-400 bg-violet-950/60 border border-violet-900/50 px-3 py-1 rounded-md">Category 03</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Visual Logs Archival Grid</span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <!-- Image Boxes loop with custom design tint -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=41" alt="Artifact Log 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-01</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=42" alt="Artifact Log 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-02</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=43" alt="Artifact Log 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-03</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=44" alt="Artifact Log 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-04</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=45" alt="Artifact Log 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-05</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=46" alt="Artifact Log 6" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-06</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=47" alt="Artifact Log 7" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-07</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=48" alt="Artifact Log 8" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-08</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=49" alt="Artifact Log 9" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-09</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=50" alt="Artifact Log 10" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-10</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=51" alt="Artifact Log 11" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-11</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=52" alt="Artifact Log 12" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-rose-600 px-2 py-0.5 rounded text-white">LOG-12</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- ================= FULLSCREEN EXPANDED PHOTO VIEWER MODAL ================= -->
+    <div id="photoLightbox" class="hidden fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-md flex flex-col items-center justify-center p-4 transition-all duration-300" onclick="closeExpandedViewer()">
+        <button class="absolute top-6 right-6 bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-xl cursor-pointer select-none">&times;</button>
+        <img id="lightboxImage" src="" alt="Expanded Preview" class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl border border-slate-800 transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- Gallery Expand Engine Script -->
+    <script src="ja.js"></script>
+</body>
+</html>

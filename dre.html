@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Workspace | Andrei L. Samilliano</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'%3E%3Cpath d='M13 10V3L4 14h7v7l9-11h-7z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="dre.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="antialiased selection:bg-emerald-500/10 selection:text-emerald-400 bg-slate-900 text-slate-100 font-sans">
+
+    <!-- App Shell Wrapper -->
+    <div class="min-h-screen flex flex-col lg:flex-row">
+        
+        <!-- ================= SIDEBAR PROFILE ENGINE ================= -->
+        <aside class="w-full lg:w-[380px] bg-slate-950/80 p-6 lg:p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800/60 backdrop-blur-xl shrink-0 lg:sticky lg:top-0 lg:h-screen overflow-y-auto">
+            
+            <div class="space-y-8">
+                
+                <!-- Profile Block -->
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <div class="relative w-24 h-24 mb-4 group">
+                        <div class="absolute inset-0 bg-emerald-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-emerald-600/20"></div>
+                        <img src="https://scontent.fcgy2-3.fna.fbcdn.net/v/t39.30808-6/672686230_2272918996571638_3545044666949769570_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEHTYZbidH_LJ78W1IgiC4bQeul3iVjzUVB66XeJWPNRXE9Lf9YWXM6-04T9bgSKu0KCjZocHLrmTCmbydhrgNC&_nc_ohc=GR4qqOeNIowQ7kNvwFjMSZX&_nc_oc=AdraYQQOC56epBTxLCr3za6GrBA3oz3yFkgOMCl7sYuQ4zdJc9UcbciZN38T-wJPigA&_nc_zt=23&_nc_ht=scontent.fcgy2-3.fna&_nc_gid=F5hhGv707YNd6fx4d9BU_g&_nc_ss=7b2a8&oh=00_Af6baSjNIE9w5Joc1d4CLYZzYtcrK8wyeDJEQ5BOZofl0A&oe=6A1D8A23" 
+                             alt="Andrei L. Samilliano" 
+                             class="relative w-full h-full object-cover rounded-2xl border border-slate-800 shadow-2xl saturate-110">
+                    </div>
+                    <h2 class="text-xl font-black text-white tracking-tight">Andrei L. Samilliano</h2>
+                    <p class="text-emerald-400 font-bold text-[10px] uppercase tracking-widest mt-1 px-2 py-0.5 bg-emerald-500/10 rounded-md border border-emerald-500/20 inline-block">Office Administration Specialist</p>
+                    <p class="text-slate-500 text-xs mt-1 font-medium">Class Pipeline: <span class="text-slate-300">BSOAD • Year 2</span></p>
+                </div>
+
+                <!-- ================= SEPARATED MENU BUTTONS GRID ================= -->
+                <div>
+                    <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-3">Workspace Dashboard</span>
+                    <div class="grid grid-cols-1 gap-2">
+                        
+                        <!-- Button 1: Home -->
+                        <a href="#home" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-emerald-500/10 group-hover:bg-emerald-500/20 text-emerald-400 p-2 rounded-lg text-sm transition-colors">🏠</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Home</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Top of Workspace</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 2: Profile -->
+                        <a href="#about" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-teal-500/10 group-hover:bg-teal-500/20 text-teal-400 p-2 rounded-lg text-sm transition-colors">👤</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Profile</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Professional Summary</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 3: Technical Skills -->
+                        <a href="#skills" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-cyan-500/10 group-hover:bg-cyan-500/20 text-cyan-400 p-2 rounded-lg text-sm transition-colors">⚡</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Technical Skills</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Competency Matrix</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 4: Media Gallery -->
+                        <a href="#gallery" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-amber-500/10 group-hover:bg-amber-500/20 text-amber-400 p-2 rounded-lg text-sm transition-colors">🖼️</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Gallery</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Media Vault (12 Logs)</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 5: Education -->
+                        <a href="#education" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-sky-500/10 group-hover:bg-sky-500/20 text-sky-400 p-2 rounded-lg text-sm transition-colors">🎓</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Education</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Academic Blueprint</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 6: Exit Portfolio -->
+                        <a href="login.html" class="flex items-center gap-3.5 px-4 py-3 bg-red-955/10 hover:bg-red-950/30 border border-red-900/20 hover:border-red-800 text-red-400 rounded-xl transition-all group shadow-sm mt-2">
+                            <span class="bg-red-500/10 group-hover:bg-red-500/20 text-red-400 p-2 rounded-lg text-sm transition-colors">🚪</span>
+                            <div class="text-left">
+                                <p class="text-xs font-black uppercase tracking-widest">Sign Out</p>
+                                <p class="text-[10px] text-red-400/60 font-light mt-0.5">End Active Session</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Meta -->
+            <div class="mt-8 pt-4 border-t border-slate-900 hidden lg:block text-center lg:text-left">
+                <span class="text-[9px] text-slate-600 font-mono">System Core Terminal &copy; 2026</span>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN VIEW CANVAS ================= -->
+        <main class="flex-grow p-6 sm:p-12 max-w-5xl bg-slate-900 text-slate-200" id="home">
+            
+            <!-- Dashboard Welcome Engine Header -->
+            <div class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950/50 border border-emerald-500/10 p-8 md:p-10 rounded-3xl overflow-hidden mb-12 shadow-2xl">
+                <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-emerald-500/5 rounded-full blur-3xl"></div>
+                <div class="relative z-10 max-w-xl">
+                    <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-bold text-[9px] uppercase tracking-widest px-2.5 py-1 rounded-md mb-4 inline-block">Operational Node</span>
+                    <h1 class="text-2xl md:text-3xl font-black text-white tracking-tight mb-2.5">Administrative Architecture Blueprint</h1>
+                    <p class="text-slate-400 text-xs md:text-sm font-light leading-relaxed">Equipped with executive-level support skills, advanced document design knowledge, and administrative precision aimed at boosting workplace efficiency.</p>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE: CONNECTIVITY METADATA -->
+            <div class="mb-12 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-4 flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-emerald-500 rounded-full"></span> Deployment Vector Parameters
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-light">
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Physical Base</span>
+                        <span class="text-slate-300 font-medium">📍 Cebu, Philippines</span>
+                    </div>
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Digital Mail</span>
+                        <a href="mailto:jael@example.com" class="text-slate-300 hover:text-emerald-400 font-medium font-mono transition-colors">✉️ jael@example.com</a>
+                    </div>
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Connectivity Network</span>
+                        <a href="https://linkedin.com" target="_blank" class="text-slate-300 hover:text-emerald-400 font-medium transition-colors">💼 linkedin.com/in/jael</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE 1: PROFESSIONAL PROFILE -->
+            <div id="about" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-teal-400 bg-teal-950/60 border border-teal-900/50 px-3 py-1 rounded-md">Category 01</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Professional Profile</span>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <h3 class="text-sm font-bold text-slate-200 mb-3 flex items-center gap-2">
+                        <span class="w-1.5 h-3 bg-teal-500 rounded-full"></span> Profile Narrative
+                    </h3>
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed font-light">
+                        I specialize in coordinating workflows, maintaining structured documentation databases, and providing high-quality digital solutions. My training in modern office methodologies allows me to adapt quickly to rapid corporate environments.
+                    </p>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE 2: TECHNICAL COMPETENCYS -->
+            <div id="skills" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/60 border border-cyan-900/50 px-3 py-1 rounded-md">Category 02</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Technical Capabilities</span>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                        <div class="flex items-center justify-between p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl">
+                            <span class="text-xs text-slate-300 font-medium">Spreadsheet Optimization (Excel)</span>
+                            <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/10 uppercase tracking-wider">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl">
+                            <span class="text-xs text-slate-300 font-medium">Records Management & Filing</span>
+                            <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/10 uppercase tracking-wider">Expert</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl">
+                            <span class="text-xs text-slate-300 font-medium">Business Transcription</span>
+                            <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/10 uppercase tracking-wider">Intermediate</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl">
+                            <span class="text-xs text-slate-300 font-medium">Digital Calendar Coordination</span>
+                            <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/10 uppercase tracking-wider">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl">
+                            <span class="text-xs text-slate-300 font-medium">Document Control & Processing</span>
+                            <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/10 uppercase tracking-wider">Expert</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-slate-900/80 border border-slate-800/60 rounded-xl">
+                            <span class="text-xs text-slate-300 font-medium">Corporate Communications</span>
+                            <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/10 uppercase tracking-wider">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= VAULT ENGINE: GALLERY ARCHIVE (12 SLOTS) ================= -->
+            <div id="gallery" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-amber-400 bg-amber-950/60 border border-amber-900/50 px-3 py-1 rounded-md">Category 03</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Visual Logs Archival Grid</span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <!-- Image Boxes loop -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=21" alt="Artifact Log 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-01</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=22" alt="Artifact Log 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-02</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=23" alt="Artifact Log 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-03</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=24" alt="Artifact Log 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-04</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=25" alt="Artifact Log 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-05</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=26" alt="Artifact Log 6" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-06</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=27" alt="Artifact Log 7" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-07</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=28" alt="Artifact Log 8" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-08</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=29" alt="Artifact Log 9" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-09</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=30" alt="Artifact Log 10" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-10</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=31" alt="Artifact Log 11" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-11</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://picsum.photos/800/800?random=32" alt="Artifact Log 12" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-amber-600 px-2 py-0.5 rounded text-white">LOG-12</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE 3: EDUCATION TIMELINE -->
+            <div id="education" class="pb-12 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-sky-400 bg-sky-950/60 border border-sky-900/50 px-3 py-1 rounded-md">Category 04</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Credentials History</span>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-slate-950 border border-slate-800/80 p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-emerald-500/30 transition-all duration-300">
+                        <div>
+                            <span class="text-[9px] font-bold text-emerald-400 uppercase tracking-widest bg-emerald-950/50 border border-emerald-900/30 px-2 py-0.5 rounded">Higher Ed</span>
+                            <h4 class="text-sm font-bold text-white mt-1.5">Bachelor of Science in Office Administration</h4>
+                            <p class="text-xs text-slate-400 font-medium mt-0.5">Major in Corporate Records Systems • <span class="italic text-slate-500 font-mono">2022 - Present (Year 2)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-950 border border-slate-800/80 p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-700 transition-all duration-300">
+                        <div>
+                            <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest bg-slate-900 border border-slate-800 px-2 py-0.5 rounded">Secondary Track</span>
+                            <h4 class="text-sm font-bold text-white mt-1.5">Senior High School Graduate</h4>
+                            <p class="text-xs text-slate-400 font-medium mt-0.5">Accountancy, Business, and Management (ABM) Strand • <span class="italic text-slate-500 font-mono">2020 - 2022</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- ================= FULLSCREEN EXPANDED PHOTO VIEWER MODAL ================= -->
+    <div id="photoLightbox" class="hidden fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-md flex flex-col items-center justify-center p-4 transition-all duration-300" onclick="closeExpandedViewer()">
+        <button class="absolute top-6 right-6 bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-xl cursor-pointer select-none">&times;</button>
+        <img id="lightboxImage" src="" alt="Expanded Preview" class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl border border-slate-800 transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- Gallery Expand Engine Script -->
+    <script src="dre.js"></script>
+</body>
+</html>

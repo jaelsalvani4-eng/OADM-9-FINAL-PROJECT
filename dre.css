@@ -1,0 +1,167 @@
+ :root {
+            --bg-color: #f5f6fa;
+            --card-bg: #ffffff;
+            --text-main: #2f3640;
+            --text-muted: #718093;
+            --accent-color: #10ac84; /* Elegant Emerald Green */
+            --border-style: 1px dashed #dcdde1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .btn-navigation {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.2s;
+            margin-bottom: 30px;
+        }
+
+        .btn-navigation:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero / Header Section */
+        .hero-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 32px; /* Smooth square-circle shape */
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .hero-card h1 {
+            margin: 10px 0 5px 0;
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            color: var(--accent-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: var(--border-style);
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        /* Content Blocks */
+        .content-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            margin-bottom: 30px;
+        }
+
+        .content-card h2 {
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        /* Minimal underline concept */
+        .content-card h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 35px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        /* Timeline / Education Layout */
+        .timeline-item {
+            border-left: 2px solid #f1f2f6;
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .timeline-title {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Grid for Skills (Two columns instead of tags) */
+        .skills-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-item {
+            border-bottom: var(--border-style);
+            padding-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+        }
+
+        .skill-level {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .skills-list { grid-template-columns: 1fr; }
+        }

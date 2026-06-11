@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Workspace | Jael N. Salvani</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234f46e5'%3E%3Cpath d='M13 10V3L4 14h7v7l9-11h-7z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="jns.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="antialiased selection:bg-blue-500/10 selection:text-blue-600 bg-slate-900 text-slate-100 font-sans">
+
+    <!-- App Shell Wrapper -->
+    <div class="min-h-screen flex flex-col lg:flex-row">
+        
+        <!-- ================= SIDEBAR PROFILE ENGINE ================= -->
+        <aside class="w-full lg:w-[380px] bg-slate-950/80 p-6 lg:p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800/60 backdrop-blur-xl shrink-0 lg:sticky lg:top-0 lg:h-screen overflow-y-auto">
+            
+            <div class="space-y-8">
+                
+                <!-- Profile Block -->
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <div class="relative w-24 h-24 mb-4 group">
+                        <div class="absolute inset-0 bg-indigo-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-indigo-600/20"></div>
+                        <img src=https://scontent.fcgy2-3.fna.fbcdn.net/v/t39.30808-1/708580842_4385548865036365_3200466206256506746_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s200x200&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEmfUgeY0X8XWvs7mPziuFINYAZPqVtdew1gBk-pW117DO6Nq7WkQtZR5CAGdmNZcffr5ZhPAHoMVBp5xsVmsHK&_nc_ohc=pG_AsGmHS3sQ7kNvwFJto0y&_nc_oc=AdrUyaxur16IP9dJGMPpw6wDXxLk6guTlZz81VxO3lSaH_aE-zuLsfgz29x83M3Ggeg&_nc_zt=24&_nc_ht=scontent.fcgy2-3.fna&_nc_gid=UfQbl3bbHTfOEtNT59nW3g&_nc_ss=7b2a8&oh=00_Af_QTMziikxujqn5pgEKBEV2m0TfhgF47SiBZeEu_EL2nA&oe=6A300A5D" 
+                             alt="Jael N. Salvani" 
+                             class="relative w-full h-full object-cover rounded-2xl border border-slate-800 shadow-2xl saturate-110">
+                    </div>
+                    <h2 class="text-xl font-black text-white tracking-tight">Jael N. Salvani</h2>
+                    <p class="text-blue-400 font-bold text-[10px] uppercase tracking-widest mt-1 px-2 py-0.5 bg-blue-500/10 rounded-md border border-blue-500/10 inline-block">BS Office Administration Student</p>
+                    <p class="text-slate-500 text-xs mt-1 font-medium">Class Pipeline: <span class="text-slate-300">BSOAD 2A</span></p>
+                </div>
+
+                <!-- ================= SEPARATED MENU BUTTONS GRID ================= -->
+                <div>
+                    <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-3">Workspace Dashboard</span>
+                    <div class="grid grid-cols-1 gap-2">
+                        
+                        <!-- Button 1: Home -->
+                        <a href="#home" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-blue-500/10 group-hover:bg-blue-500/20 text-blue-400 p-2 rounded-lg text-sm transition-colors">🏠</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Home</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Top of Workspace</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 2: Address -->
+                        <a href="#address" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-emerald-500/10 group-hover:bg-emerald-500/20 text-emerald-400 p-2 rounded-lg text-sm transition-colors">📍</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Address</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Location Parameters</p>
+                            </div>
+                        </a>
+
+                        <!-- NEW BUTTON: Gallery -->
+                        <a href="#gallery" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-fuchsia-500/10 group-hover:bg-fuchsia-500/20 text-fuchsia-400 p-2 rounded-lg text-sm transition-colors">🖼️</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Gallery</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Stored Media (12 Logs)</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 4: Social Media Acc -->
+                        <a href="#socials" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-indigo-500/10 group-hover:bg-indigo-500/20 text-indigo-400 p-2 rounded-lg text-sm transition-colors">🌐</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">Social Media Acc.</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Connectivity Matrix</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 5: About -->
+                        <a href="#about" class="flex items-center gap-3.5 px-4 py-3 bg-slate-900/60 hover:bg-slate-900 border border-slate-900 hover:border-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                            <span class="bg-amber-500/10 group-hover:bg-amber-500/20 text-amber-400 p-2 rounded-lg text-sm transition-colors">👤</span>
+                            <div class="text-left">
+                                <p class="text-xs font-bold uppercase tracking-wider">About</p>
+                                <p class="text-[10px] text-slate-500 font-light mt-0.5">Executive Background</p>
+                            </div>
+                        </a>
+
+                        <!-- Button 6: Sign Out -->
+                        <a href="login.html" class="flex items-center gap-3.5 px-4 py-3 bg-red-950/10 hover:bg-red-950/30 border border-red-900/20 hover:border-red-800 text-red-400 rounded-xl transition-all group shadow-sm mt-2">
+                            <span class="bg-red-500/10 group-hover:bg-red-500/20 text-red-400 p-2 rounded-lg text-sm transition-colors">🚪</span>
+                            <div class="text-left">
+                                <p class="text-xs font-black uppercase tracking-widest">Sign Out</p>
+                                <p class="text-[10px] text-red-400/60 font-light mt-0.5">End Active Session</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Meta -->
+            <div class="mt-8 pt-4 border-t border-slate-900 hidden lg:block text-center lg:text-left">
+                <span class="text-[9px] text-slate-600 font-mono">System Core Terminal &copy; 2026</span>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN VIEW CANVAS ================= -->
+        <main class="flex-grow p-6 sm:p-12 max-w-5xl bg-slate-900 text-slate-200" id="home">
+            
+            <!-- Dashboard Welcome Engine Header -->
+            <div class="relative bg-gradient-to-br from-indigo-950 via-slate-900 to-blue-950 border border-indigo-500/10 p-8 md:p-10 rounded-3xl overflow-hidden mb-12 shadow-2xl">
+                <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10 max-w-xl">
+                    <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-bold text-[9px] uppercase tracking-widest px-2.5 py-1 rounded-md mb-4 inline-block">Workspace Hub</span>
+                    <h1 class="text-2xl md:text-3xl font-black text-white tracking-tight mb-2.5">Administrative Architecture Blueprint</h1>
+                    <p class="text-slate-400 text-xs md:text-sm font-light leading-relaxed">Fusing classical records administration workflow with modern system operational engines.</p>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE: LOCATION METADATA -->
+            <div id="address" class="mb-12 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl scroll-mt-6">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-4 flex items-center gap-2">
+                    <span class="w-1.5 h-3 bg-emerald-500 rounded-full"></span> 📍 Physical Deployment Base
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-light">
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Corporate Communications</span>
+                        <a href="mailto:jaelsalvani4@gmail.com" class="text-slate-300 hover:text-blue-400 font-medium font-mono break-all transition-colors">jaelsalvani4@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Mobile Terminal</span>
+                        <span class="text-slate-300 font-mono tracking-wider font-semibold">+63 954 168 1957</span>
+                    </div>
+                    <div>
+                        <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Location Address</span>
+                        <span class="text-slate-300 font-medium">Aureliana, Patnongon Antique</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= NEW GALLERY ARCHIVE ENGINE (12 SLOTS) ================= -->
+            <div id="gallery" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-fuchsia-400 bg-fuchsia-950 border border-fuchsia-900/50 px-3 py-1 rounded-md">Category Media</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Visual Storage Engine</span>
+                </div>
+
+                <!-- 12-Image Fluid Response Matrix Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <!-- Image Box 1 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t39.30808-6/615867642_122156064704638916_7794783044137467642_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFBSCQuQyio6C1ybIFIQ4iwfVDjbh6xcRt9UONuHrFxG7ojmpP2twqWDJ2L7xFB_oxAGA8_mfLVQFokRBk8_-Kg&_nc_ohc=z1TGlaWduo4Q7kNvwG2gf4C&_nc_oc=Ado8CViiMZM-Pj19QLL3SfmKp1gy_eYmluzE6lMEYNqMf7PnJxEEaSJUmvrad2TkTIM&_nc_zt=23&_nc_ht=scontent.fceb1-4.fna&_nc_gid=awdbzWz0KkDqrYM6xPUf6Q&_nc_ss=7b2a8&oh=00_Af8GGcz61XxdoS1G6TvzMCNqXox8hhaO0v_b7a6LxAwCGQ&oe=6A2DE33D" alt="Workspace Attachment 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-01</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 2 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/615368051_122156022938638916_1934040711969735013_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF_047PZzmBOxIoXGGc0oftvjicR1pnkae-OJxHWmeRpzNHeOb6MtxLT-blUxaFibkxuZ7nEnf1Qr8l4iKbzoLm&_nc_ohc=_TFh_z47bBIQ7kNvwFyuipL&_nc_oc=AdrhD2DHFt_1q3rx_Wl7B9FPvXwNtZxW7hAEq6q-Qg_ZDwdTzu_q8GZToDecBaPbXqc&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=Yp8i5x6KwsSkh-kUkmrsIQ&_nc_ss=7b2a8&oh=00_Af99pXXtBtNcUDFxf-tnWCwpE088WtnQ80pw3ixYz_2EZw&oe=6A2DCD3F" alt="Workspace Attachment 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-02</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 3 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/615158096_122156016758638916_6627081400112616884_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG3cs_YV5LDizPILCePLwoSz41MpfB_OxHPjUyl8H87EbuXYedOybYaiykL3BhJRLm_97q3Mj0U50_4zuVFbBWM&_nc_ohc=mGjUoDims60Q7kNvwEV1dS9&_nc_oc=AdqWXjW91eHMdzhEwUvmyXCFnFE0NVRg1CMsFbGw4MLBVu62C-bgbwya0LD3uit2djg&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=0f7eD_VrHPtyZEGiZKH2tg&_nc_ss=7b2a8&oh=00_Af-6tFpD8fagvNUdp2r1_Y32CORnIgTuN-Suzvk71UfP7Q&oe=6A2DDE3C" alt="Workspace Attachment 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-03</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 4 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/614647785_122155998974638916_2110671567267157041_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEOhHWcXk0dO0YV4TeJlSlnzD_5SA4uRbHMP_lIDi5FsSjH62Jx6i3EGisuU9zzrNp-PxL7DtuI92uxpPBwrJp6&_nc_ohc=zThCGUUxrpQQ7kNvwF0nXi9&_nc_oc=AdrbRDDfEgqNv75LXphpAtcp0e5QT5fsU-DRuyTxQf6sV9RXfRfXnCHbaqNw6WOrsXM&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=1e8xdh6I4d5FWUdgNh_rkQ&_nc_ss=7b2a8&oh=00_Af82Hf9hUB25JHiyJ3e3ulpfr61dLqUv5KyMnr_i8CUEgQ&oe=6A2DC194" alt="Workspace Attachment 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-04</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 5 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/615156355_122155926236638916_5163766294581357494_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEBHUGEFZ7uS6UygDL-AT44I2jXjx2YFXkjaNePHZgVeaQFokQP9LcZioQ_W-wDa2huwUnFGACcZ_TQ3eGk3LI7&_nc_ohc=4zoXHrEJ22sQ7kNvwHnqewF&_nc_oc=AdoVbS7wPNkapdPLncb4NxUXB8sPv6DEMN69VscdRZyK-i6EHYHRJyw8__js-_h7BmE&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=vBqIUWq3m0SPif-regZRaw&_nc_ss=7b2a8&oh=00_Af8WrMF8bBim_guMIo6xWi8eA_dHOEPHFWLZAsHqIjCBHw&oe=6A2DBE77" alt="Workspace Attachment 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-05</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 6 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t39.30808-6/615220770_122155861586638916_5490862422358021301_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEwutTRfhnTD6TxtIjjv-4IplwH1fV7qeqmXAfV9Xup6sxh73kPiOXpIdpqkVBdmX1jeTICucP-rrJ0UQfho83L&_nc_ohc=N0BNBwaGp2MQ7kNvwElS7o0&_nc_oc=Adrh2KlUhgCtFtgUDmvmxjRkmd5iUmn4_3dAg1gQVp1uoGi9-DvWr9jcgPb5dicFdY8&_nc_zt=23&_nc_ht=scontent.fceb1-4.fna&_nc_gid=3ljbpRzgXdNq31glkSa1WQ&_nc_ss=7b2a8&oh=00_Af8CDvfkfq7PWLqHL4ZKumhhH0JX-vVe3xYlYAPlW7zaAQ&oe=6A2DCA89" alt="Workspace Attachment 6" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-06</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 7 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/615742217_122155857422638916_1851074458760919741_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHpDXxlWC6-avTivvdsAy3iPk7GXP5lJoE-TsZc_mUmgfPnSlMW_WDHL5FrrlhIgIR1tda5tZuMDjvuIBVMEn-H&_nc_ohc=3mnis1BlxvkQ7kNvwEG-Xhu&_nc_oc=AdoQnDXpFjZ5t8W3M4mut1NEpeIlRByP1cJQc5L5wIY5A8FoP6WrjUmtxCOqOf5Z2yc&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=NtRGcvEPdDdYlODpHhvhUg&_nc_ss=7b2a8&oh=00_Af9r1OCAJd2PQ5Cigx9j4SOkcsIVEnv4rQgItIm6WJ1Tvw&oe=6A2DE535" alt="Workspace Attachment 7" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-07</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 8 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/611150259_122155434548638916_2972000170100907679_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFxuuOfbgOgwCmXGxcncm3ivf6Jk2iU6sK9_omTaJTqwlbXBUx3js9gKG8v1RQUGkznlrEC33W5wegcJmVhKsaQ&_nc_ohc=m3wYwU0wBYAQ7kNvwER1D9r&_nc_oc=Adqv9MRA7ybO4epjWD_3w5rXmucfo5PdoXDBttil8BZysHLxu54NNmF5ianwDzqwa0k&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=nvkwXM5DtiENmEe_Ko3Vcg&_nc_ss=7b2a8&oh=00_Af8hZxmE0bpbIdj57oUux7d8f4OEDBI1cpTETTm41IUTsQ&oe=6A2DEA8A" alt="Workspace Attachment 8" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-08</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 9 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/598561643_122153252768638916_3121128194895950313_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1108&ctp=s2048x1108&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGblnzQMbJ-Ae_2NHLu0PTsiFH-nPM0iTuIUf6c8zSJO7HBR2Lsz5xBxiH-SiOV9FesVOkS6VG2i5YJ93NP36Tv&_nc_ohc=smAV1Y2xTvUQ7kNvwHZbgAd&_nc_oc=AdrHi0dgnxGFI06TfRjVxdyg6ZgWjPhKVBt-j75L3STk3uBqUkpWgSyB8uEhC2mLzgI&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=Jp4XGZH7mRsJejaXahwHNw&_nc_ss=7b2a8&oh=00_Af-Pqb7NZ4TpOzj2YDSyXJ92av5CRc0Go8BRl4Nsh518GA&oe=6A2DD791" alt="Workspace Attachment 9" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-09</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 10 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/600529818_122153243330638916_3949009604431336323_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFZZMvUBLU_WjJVJaLTykZH6gzOVJW1B6bqDM5UlbUHphjCOVyco5jRyZUWpk8CLKyVIN7oblWlRZSW6FQxxwD3&_nc_ohc=fDcArsYepcgQ7kNvwHjfSQG&_nc_oc=AdqtzhVaiWUgvgQjn49ucb5pQFBXUl7XhLmgJiABr8E-Hw1elOQBDaWYJeEhys2QSqw&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=d5SGsD1kbteQ3bTAV3fB9g&_nc_ss=7b2a8&oh=00_Af9eaD2gO4grO5ZsgGNcDArgO-qwiRYrZQlMVqC2hLW4QQ&oe=6A2DC744" alt="Workspace Attachment 10" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-10</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 11 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/490378877_122127093062638916_65205273293248391_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH8jdtlZ-pKMkewb-o4S7d0ZBhwkNzgiwdkGHCQ3OCLB7JNnlFE7IlD229d2l5Ta5k5WjPJYMgLbgOggxrm33Lp&_nc_ohc=T1uCvHptrwMQ7kNvwFPVwVE&_nc_oc=AdqI1NKBAZq-3f6B0luhOrPTST0gn4dyTAVlKUpKQJbRDFVCz2dpE_KpciZhylNacao&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=7WuolfkeE1Kf_7kUKNvjZw&_nc_ss=7b2a8&oh=00_Af8aZhBug8yZnPTvlqwF_Q5Xo2qqs6dl4khmcrbkSy1a2g&oe=6A2DB672" alt="Workspace Attachment 11" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-11</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                    <!-- Image Box 12 -->
+                    <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                        <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/467734897_122098016372638916_182097815595936959_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFHHnK1sFKyWWpO36eWBycypz3G3XwDSqmnPcbdfANKqVwtAgNkKQwCqxlwBW_E79Edm9yPZDUZJdnDdupMw61i&_nc_ohc=YfeQKvudnm4Q7kNvwE8Jf6w&_nc_oc=AdotEhq6VQqnvirohPQrDXhIy0WG8wmToeTYIJF1Zny9_jgxxpyFNoLcjwSre13JdUw&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=qETC9j3_xxrwsoQb-hbVMg&_nc_ss=7b2a8&oh=00_Af9Q9OR-fLlaJBJ819-ontLF3Q-o8Gv1vkypj-Hr6BqUAw&oe=6A2DCB8D" alt="Workspace Attachment 12" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                            <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-12</span>
+                            <span class="text-xs text-white">🔍</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE 1: EXECUTIVE ATTRIBUTES -->
+            <div id="about" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-blue-400 bg-blue-950 border border-blue-900/50 px-3 py-1 rounded-md">Category 01</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Executive Summary</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- About Data -->
+                    <div class="md:col-span-2 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                        <h3 class="text-sm font-bold text-slate-200 mb-3 flex items-center gap-2">
+                            <span class="w-1.5 h-3 bg-blue-500 rounded-full"></span> Profile Narrative
+                        </h3>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed font-light">
+                            I am a highly driven Office Administration specialist focusing extensively on modern business architecture, system efficiency protocols, and technical business data operations. Passionate about engineering automated structural pipelines inside modern corporate work systems.
+                        </p>
+                    </div>
+
+                    <!-- Origin Track -->
+                    <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-sm font-bold text-slate-200 mb-2">Roots & Background</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed font-light">
+                                Born in <strong class="font-semibold text-slate-200">Bukidnon</strong> and forged in <strong class="font-semibold text-slate-200">Ozamiz City</strong>, I follow operational systems that enhance team production and efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-Interests Display Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                        <h3 class="text-sm font-bold text-slate-200 mb-4 flex items-center gap-2">Operational Vector Fields</h3>
+                        <ul class="space-y-3.5 text-xs text-slate-400">
+                            <li class="flex gap-2.5"><span class="text-blue-400 font-bold">&bull;</span> <span><strong class="text-slate-200 font-medium">Cloud Architecture Data:</strong> Engineering cloud databases.</span></li>
+                            <li class="flex gap-2.5"><span class="text-blue-400 font-bold">&bull;</span> <span><strong class="text-slate-200 font-medium">Strategic Analysis:</strong> Absorbing technical organizational guides.</span></li>
+                            <li class="flex gap-2.5"><span class="text-blue-400 font-bold">&bull;</span> <span><strong class="text-slate-200 font-medium">Infrastructure Workflows:</strong> Aligning local civic task systems.</span></li>
+                            <li class="flex gap-2.5"><span class="text-blue-400 font-bold">&bull;</span> <span><strong class="text-slate-200 font-medium">Operational Writing:</strong> Building analytical dynamic system logging assets.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-slate-950 to-blue-950 border border-blue-900/30 text-slate-200 p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between shadow-xl">
+                        <div class="absolute right-0 top-0 w-24 h-24 bg-blue-500/5 rounded-full blur-xl"></div>
+                        <div>
+                            <h3 class="text-sm font-bold text-white mb-2">Target Milestones</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
+                                Currently training to scale up as a recognized <strong class="text-blue-400 font-medium">Certified Administrative Professional</strong>. Driven to deploy automated database assets into high-performance enterprise platforms.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="inline-block bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[9px] font-bold uppercase tracking-widest px-2.5 py-1 rounded">Ops Protocol Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE 2: CONNECTIVITY PROFILES MATCH -->
+            <div id="socials" class="mb-14 scroll-mt-6">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-indigo-400 bg-indigo-950 border border-indigo-900/50 px-3 py-1 rounded-md">Category 02</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Connectivity Profiles Matrix</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="https://facebook.com" target="_blank" class="flex flex-col justify-between p-4 bg-slate-950 border border-slate-800 hover:border-blue-500/30 rounded-2xl transition-all group shadow-md">
+                        <span class="text-xl">📘</span>
+                        <div class="mt-4">
+                            <p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Facebook</p>
+                            <p class="text-white text-xs font-semibold mt-0.5 group-hover:text-blue-400 transition-colors">@Jael Salvani</p>
+                        </div>
+                    </a>
+                    <a href="https://Tiktok.com" target="_blank" class="flex flex-col justify-between p-4 bg-slate-950 border border-slate-800 hover:border-pink-500/30 rounded-2xl transition-all group shadow-md">
+                        <span class="text-xl">🎵</span>
+                        <div class="mt-4">
+                            <p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Tiktok</p>
+                            <p class="text-white text-xs font-semibold mt-0.5 group-hover:text-pink-400 transition-colors">@Jaelsalvani</p>
+                        </div>
+                    </a>
+                    <a href="https://Instagram.com" target="_blank" class="flex flex-col justify-between p-4 bg-slate-950 border border-slate-800 hover:border-purple-500/30 rounded-2xl transition-all group shadow-md">
+                        <span class="text-xl">📸</span>
+                        <div class="mt-4">
+                            <p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Instagram</p>
+                            <p class="text-white text-xs font-semibold mt-0.5 group-hover:text-purple-400 transition-colors">@Jael Salvani</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MODULE ARCHIVE 3: EDUCATION AND BADGES -->
+            <div class="pb-12">
+                <div class="flex items-center gap-4 mb-6">
+                    <h2 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 bg-slate-950 border border-slate-800 px-3 py-1 rounded-md">Category 03</h2>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Credentials Log</span>
+                </div>
+
+                <!-- Academic Timeline Cards -->
+                <div class="space-y-4 mb-8">
+                    <div class="bg-slate-950 border border-slate-800/80 p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-blue-500/30 transition-all duration-300">
+                        <div>
+                            <span class="text-[9px] font-bold text-blue-400 uppercase tracking-widest bg-blue-950 border border-blue-900/30 px-2 py-0.5 rounded">Higher Ed</span>
+                            <h4 class="text-sm font-bold text-white mt-1.5">Bachelor of Science in Office Administration</h4>
+                            <p class="text-xs text-slate-400 font-medium mt-0.5">University of Antique &bull; <span class="italic text-slate-500 font-mono">2026 - Present</span></p>
+                            <p class="text-xs text-slate-500 mt-2 font-light"><strong class="font-medium text-slate-400">Core Engine Focus:</strong> Systems Apps, Record Lifecycles, Keyboarding, Business Ethics.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-950 border border-slate-800/80 p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-indigo-500/30 transition-all duration-300">
+                        <div>
+                            <span class="text-[9px] font-bold text-indigo-400 uppercase tracking-widest bg-indigo-950 border border-indigo-900/30 px-2 py-0.5 rounded">Secondary Matrix</span>
+                            <h4 class="text-sm font-bold text-white mt-1.5">Senior & Junior High School Credentials</h4>
+                            <p class="text-xs text-slate-400 font-medium mt-0.5">Ozamiz City National High School &bull; <span class="italic text-slate-500 font-mono">Graduated 2020 - 2022</span></p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-950 border border-slate-800/80 p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-700 transition-all duration-300">
+                        <div>
+                            <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest bg-slate-900 border border-slate-800 px-2 py-0.5 rounded">Primary Track</span>
+                            <h4 class="text-sm font-bold text-white mt-1.5">Elementary Foundation Matrix</h4>
+                            <p class="text-xs text-slate-400 font-medium mt-0.5">Aureliana Elementary School &bull; <span class="italic text-slate-500 font-mono">Graduated 2016</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verified Skills Badges Ecosystem -->
+                <div class="mb-8">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-3.5">Skills and Hobbies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Gamer</span>
+                        <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Instrument Player</span>
+                        <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Editor</span>
+                        <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Chess Player</span>
+                        <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Badminton Player</span>
+                        <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Table tennis Player</span>
+                        <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Programmer</span>
+                    </div>
+                </div>
+
+                <!-- Distinctions Block -->
+                <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Acreds & Special Distinctions</h3>
+                    <div class="grid grid-cols-1 gap-2.5 text-xs text-slate-300">
+                        <div class="flex items-center gap-3.5 p-3 bg-amber-500/5 rounded-xl border border-amber-500/10">
+                            <span class="text-amber-500 text-sm">🏆</span>
+                            <span>Consistent Academic Distinction Anchor — Secondary Lifecycle Track</span>
+                        </div>
+                        <div class="flex items-center gap-3.5 p-3 bg-blue-500/5 rounded-xl border border-blue-500/10">
+                            <span class="text-blue-400 text-sm">📜</span>
+                            <span>Certificate of Proficiency Endorsement in Technical Business Documentation</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- ================= FULLSCREEN EXPANDED PHOTO VIEWER MODAL ================= -->
+    <div id="photoLightbox" class="hidden fixed inset-0 z-[100] bg-slate-950/90 backdrop-blur-md flex flex-col items-center justify-center p-4 transition-all duration-300" onclick="closeExpandedViewer()">
+        <button class="absolute top-6 right-6 bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-xl cursor-pointer select-none">&times;</button>
+        <img id="lightboxImage" src="" alt="Expanded Preview" class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl border border-slate-800 transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- Gallery Expand Logic Scripts Engine -->
+    <script src="jns.js"></script>
+</body>
+</html>
