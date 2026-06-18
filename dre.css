@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        /* Glassmorphic Sidebar Blur for Desktop */
+        @media (min-width: 1024px) {
+            .sticky-sidebar {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+            }
+        }
+    /* 1. Global smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* 2. Offset target sections so the fixed navbar doesn't overlap them */
+    /* Adjust the pixel values to match your exact header heights */
+    section, [id] {
+        scroll-margin-top: 100px; 
+    }
+
+    @media (max-width: 767px) {
+        section, [id] {
+            scroll-margin-top: 150px; /* Larger offset for wrapped mobile menu */
+        }
+    }
+
+    /* Your existing dynamic hiding utility classes */
+    .navbar-hidden {
+        transform: translateY(-87px);
+    }
+    @media (max-width: 767px) {
+        .navbar-hidden {
+            transform: translateY(-138px);
+        }
+    }
+    html {
+    scroll-behavior: smooth;
+    /* Use the JS variable if it exists, otherwise default to 100px/150px */
+    scroll-padding-top: var(--scroll-padding, 100px);
+}
+@media (max-width: 767px) {
+    html {
+        scroll-padding-top: var(--scroll-padding, 150px);
+    }
+}

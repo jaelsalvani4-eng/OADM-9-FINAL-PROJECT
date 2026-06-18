@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Workspace | Jael N. Salvani</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234f46e5'%3E%3Cpath d='M13 10V3L4 14h7v7l9-11h-7z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="jns.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="antialiased selection:bg-blue-500/10 selection:text-blue-600 bg-slate-900 text-slate-100 font-sans">
+
+    <!-- Wrapper to handle positioning and transition -->
+<div class="fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out" id="top-navbar-wrapper">
+    
+    <!-- Main Header Bar -->
+    <header class="w-full bg-slate-900/80 border-b border-slate-800/80 px-6 py-3 backdrop-blur-xl shadow-xl flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        
+        <!-- Left Side: Brand Identity -->
+        <div class="flex items-center gap-3 relative group">
+            <div class="absolute -left-2 top-1/2 -translate-y-1/2 w-12 h-12 bg-blue-500/10 rounded-full blur-md"></div>
+            <div class="relative flex-shrink-0 z-10">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-blue-500/20">
+                    N
+                </div>
+                <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-slate-900 rounded-full animate-pulse"></span>
+            </div>
+            <div class="overflow-hidden z-10">
+                <h3 class="text-sm font-bold text-white tracking-wide truncate">Nexus Command</h3>
+                <p class="text-[11px] text-slate-400 font-medium truncate flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block"></span>
+                    Workspace Dashboard
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side: Navigation Menu -->
+        <nav class="flex flex-wrap items-center gap-2 md:gap-3 flex-1 justify-start md:justify-end">
+            <!-- Button 1: Home -->
+            <a href="#home" class="flex items-center gap-3 px-3.5 py-2 bg-slate-900/60 hover:bg-slate-900 border border-slate-900/50 hover:border-slate-800/80 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                <span class="bg-blue-500/10 group-hover:bg-blue-500/20 text-blue-400 p-1.5 rounded-lg text-xs transition-colors">🏠</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[10px] font-bold uppercase tracking-wider leading-none">Home</p>
+                    <p class="text-[9px] text-slate-500 font-light mt-0.5 leading-none">Top</p>
+                </div>
+            </a>
+
+            <!-- Button 2: Address -->
+            <a href="#address" class="flex items-center gap-3 px-3.5 py-2 bg-slate-900/60 hover:bg-slate-900 border border-slate-900/50 hover:border-slate-800/80 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                <span class="bg-emerald-500/10 group-hover:bg-emerald-500/20 text-emerald-400 p-1.5 rounded-lg text-xs transition-colors">📍</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[10px] font-bold uppercase tracking-wider leading-none">Address</p>
+                    <p class="text-[9px] text-slate-500 font-light mt-0.5 leading-none">Parameters</p>
+                </div>
+            </a>
+
+            <!-- Button 3: Gallery -->
+            <a href="#gallery" class="flex items-center gap-3 px-3.5 py-2 bg-slate-900/60 hover:bg-slate-900 border border-slate-900/50 hover:border-slate-800/80 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                <span class="bg-fuchsia-500/10 group-hover:bg-fuchsia-500/20 text-fuchsia-400 p-1.5 rounded-lg text-xs transition-colors">🖼️</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[10px] font-bold uppercase tracking-wider leading-none">Gallery</p>
+                    <p class="text-[9px] text-slate-500 font-light mt-0.5 leading-none">12 Logs</p>
+                </div>
+            </a>
+
+            <!-- Button 4: Social Media Acc -->
+            <a href="#socials" class="flex items-center gap-3 px-3.5 py-2 bg-slate-900/60 hover:bg-slate-900 border border-slate-900/50 hover:border-slate-800/80 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                <span class="bg-indigo-500/10 group-hover:bg-indigo-500/20 text-indigo-400 p-1.5 rounded-lg text-xs transition-colors">🌐</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[10px] font-bold uppercase tracking-wider leading-none">Socials</p>
+                    <p class="text-[9px] text-slate-500 font-light mt-0.5 leading-none">Matrix</p>
+                </div>
+            </a>
+
+            <!-- Button 5: About -->
+            <a href="#about" class="flex items-center gap-3 px-3.5 py-2 bg-slate-900/60 hover:bg-slate-900 border border-slate-900/50 hover:border-slate-800/80 text-slate-300 hover:text-white rounded-xl transition-all group shadow-sm">
+                <span class="bg-amber-500/10 group-hover:bg-amber-500/20 text-amber-400 p-1.5 rounded-lg text-xs transition-colors">👤</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[10px] font-bold uppercase tracking-wider leading-none">About</p>
+                    <p class="text-[9px] text-slate-500 font-light mt-0.5 leading-none">Executive</p>
+                </div>
+            </a>
+
+            <div class="hidden sm:block w-[1px] h-6 bg-slate-800 self-center mx-1"></div>
+
+            <!-- Button 6: Sign Out -->
+            <a href="index.html" class="flex items-center gap-3 px-3.5 py-2 bg-red-950/10 hover:bg-red-950/20 border border-red-900/20 hover:border-red-800/60 text-red-400 rounded-xl transition-all group shadow-sm">
+                <span class="bg-red-500/10 group-hover:bg-red-500/20 text-red-400 p-1.5 rounded-lg text-xs transition-colors">🚪</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[10px] font-black uppercase tracking-widest leading-none">Sign Out</p>
+                    <p class="text-[9px] text-red-400/50 font-light mt-0.5 leading-none">End</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hide/Show Trigger Tab Tab -->
+    <div class="flex justify-center">
+        <button 
+            onclick="toggleNavbar()" 
+            class="bg-slate-900 border border-t-0 border-slate-800 px-4 py-1.5 rounded-b-xl text-[10px] font-bold tracking-widest uppercase text-slate-400 hover:text-white hover:bg-slate-850 flex items-center gap-1.5 shadow-lg shadow-black/40 transition-colors focus:outline-none"
+            id="toggle-btn"
+        >
+            <span id="toggle-icon" class="transition-transform duration-300">▲</span> 
+            <span id="toggle-text">Hide Menu</span>
+        </button>
+    </div>
+</div>
+
+<!-- Extra Style Helper if needed (Tailwind standard configuration doesn't require this, but adds smooth support) -->
+<style>
+    /* Custom utility class to slide the element out based on its layout height */
+    .navbar-hidden {
+        transform: translateY(-87px); /* Shifts the header up just enough to leave the tab visible */
+    }
+    @media (max-width: 767px) {
+        .navbar-hidden {
+            transform: translateY(-138px); /* Adjusts displacement for wrapped columns on smaller mobile windows */
+        }
+    }
+</style>
+
+<!-- Toggle Logic Controller -->
+<script>
+    function toggleNavbar() {
+        const wrapper = document.getElementById('top-navbar-wrapper');
+        const icon = document.getElementById('toggle-icon');
+        const text = document.getElementById('toggle-text');
+        
+        wrapper.classList.toggle('navbar-hidden');
+        
+        if (wrapper.classList.contains('navbar-hidden')) {
+            icon.style.transform = 'rotate(180deg)';
+            text.innerText = 'Show Menu';
+        } else {
+            icon.style.transform = 'rotate(0deg)';
+            text.innerText = 'Hide Menu';
+        }
+    }
+</script>
+
+   <div class="min-h-screen bg-slate-900 text-slate-200">
+    
+    <main class="p-6 sm:p-12 max-w-5xl mx-auto" id="home">
+        
+        <div class="relative bg-gradient-to-br from-indigo-950 via-slate-950 to-blue-950 border border-indigo-500/10 p-8 md:p-10 rounded-3xl overflow-hidden mb-12 shadow-2xl flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+            <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl"></div>
+            
+            <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 z-10">
+                <div class="relative w-24 h-24 shrink-0 group">
+                    <div class="absolute inset-0 bg-indigo-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-indigo-600/20"></div>
+                    <img src="https://scontent.fcgy2-3.fna.fbcdn.net/v/t39.30808-1/708580842_4385548865036365_3200466206256506746_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s200x200&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEmfUgeY0X8XWvs7mPziuFINYAZPqVtdew1gBk-pW117DO6Nq7WkQtZR5CAGdmNZcffr5ZhPAHoMVBp5xsVmsHK&_nc_ohc=pG_AsGmHS3sQ7kNvwFJto0y&_nc_oc=AdrUyaxur16IP9dJGMPpw6wDXxLk6guTlZz81VxO3lSaH_aE-zuLsfgz29x83M3Ggeg&_nc_zt=24&_nc_ht=scontent.fcgy2-3.fna&_nc_gid=UfQbl3bbHTfOEtNT59nW3g&_nc_ss=7b2a8&oh=00_Af_QTMziikxujqn5pgEKBEV2m0TfhgF47SiBZeEu_EL2nA&oe=6A300A5D" 
+                         alt="Jael N. Salvani" 
+                         class="relative w-full h-full object-cover rounded-2xl border border-slate-800 shadow-2xl saturate-110">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-black text-white tracking-tight">Jael N. Salvani</h2>
+                    <p class="text-blue-400 font-bold text-[10px] uppercase tracking-widest mt-1.5 px-2 py-0.5 bg-blue-500/10 rounded-md border border-blue-500/10 inline-block">BS Office Administration Student</p>
+                    <p class="text-slate-400 text-xs mt-2 font-medium">Class Pipeline: <span class="text-slate-200 font-semibold">BSOAD 2A</span></p>
+                </div>
+            </div>
+
+            <div class="relative z-10 text-center md:text-right max-w-xs md:self-stretch flex flex-col justify-between items-center md:items-end border-t md:border-t-0 md:border-l border-slate-800/60 pt-6 md:pt-0 md:pl-8">
+                <div>
+                    <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-bold text-[9px] uppercase tracking-widest px-2.5 py-1 rounded-md mb-2 inline-block">Workspace Hub</span>
+                    <h1 class="text-lg font-black text-white tracking-tight">Administrative Architecture</h1>
+                </div>
+                <p class="text-slate-400 text-[11px] font-light mt-2 md:mt-0 leading-relaxed">Fusing records workflow with system operational engines.</p>
+            </div>
+        </div>
+
+        <div id="address" class="mb-12 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl scroll-mt-6">
+            <h3 class="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-4 flex items-center gap-2">
+                <span class="w-1.5 h-3 bg-emerald-500 rounded-full"></span> 📍 Physical Deployment Base
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-light">
+                <div>
+                    <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Corporate Communications</span>
+                    <a href="mailto:jaelsalvani4@gmail.com" class="text-slate-300 hover:text-blue-400 font-medium font-mono break-all transition-colors">jaelsalvani4@gmail.com</a>
+                </div>
+                <div>
+                    <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Mobile Terminal</span>
+                    <span class="text-slate-300 font-mono tracking-wider font-semibold">+63 954 168 1957</span>
+                </div>
+                <div>
+                    <span class="block text-[9px] font-bold text-slate-500 uppercase tracking-widest mb-1">Location Address</span>
+                    <span class="text-slate-300 font-medium">Aureliana, Patnongon Antique</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery" class="mb-14 scroll-mt-6">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-[10px] font-bold uppercase tracking-widest text-fuchsia-400 bg-fuchsia-950 border border-fuchsia-900/50 px-3 py-1 rounded-md">Category Media</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div>
+                <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Visual Storage Engine</span>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                    <img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t39.30808-6/615867642_122156064704638916_7794783044137467642_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFBSCQuQyio6C1ybIFIQ4iwfVDjbh6xcRt9UONuHrFxG7ojmpP2twqWDJ2L7xFB_oxAGA8_mfLVQFokRBk8_-Kg&_nc_ohc=M2FUBxQiTeMQ7kNvwE5QpbT&_nc_oc=Adp5ybqdexC6GFlPHHMmJ1VxaJV6bawVC16ZPbr6AcqtLATQCM4bYFI-GEVTEylcv1s&_nc_zt=23&_nc_ht=scontent.fceb1-4.fna&_nc_gid=FcS23QhJfNEiQb4mHz3jOw&_nc_ss=7b2a8&oh=00_Af-0ljiRBkskLwEBIQP0wdGhQXwRx4ZxczODEDBggXZn_Q&oe=6A35237D" alt="Workspace Attachment 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                        <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-01</span>
+                        <span class="text-xs text-white">🔍</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                    <img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t39.30808-6/589176183_122156022824638916_5749083302860942329_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHD9jxkuQjCjUP2vOZTQ5ejXZGu4T4XWzJdka7hPhdbMoSPjYPaFJq5tvhKMHT62A1SWLLFTP6ehxT-M_tiXqXb&_nc_ohc=62rVpDdUJU8Q7kNvwG2GV83&_nc_oc=AdrRk3ZyydLUFdUY-aVAe5JEiZev57wXy1sEjjnyHlCDbHNHIP1XJtjsqtCZi-TKBLQ&_nc_zt=23&_nc_ht=scontent.fceb1-4.fna&_nc_gid=ySjSK15GbhNvGIONOqQm1Q&_nc_ss=7b2a8&oh=00_Af_GLWix_Pd8uT7RokGkV7GQQ6j2zGvxeryJdksr3THbxQ&oe=6A35381A" alt="Workspace Attachment 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                        <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-02</span>
+                        <span class="text-xs text-white">🔍</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                    <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/615158096_122156016758638916_6627081400112616884_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG3cs_YV5LDizPILCePLwoSz41MpfB_OxHPjUyl8H87EbuXYedOybYaiykL3BhJRLm_97q3Mj0U50_4zuVFbBWM&_nc_ohc=VXnF9zsJJbsQ7kNvwHKZnOm&_nc_oc=AdpA2s3mpGR741i0AkUfU-Dxc1G8z8_guWEjKPxh95qmh2ht2tryRhWkTLveUlqCNKA&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=ylyX4m0QJQeQlm5AL1XNKA&_nc_ss=7b2a8&oh=00_Af-cl2aEQz-gi_NtQl3fXpqNo1f-BLNj8AN6DTNNRs0GFw&oe=6A351E7C" alt="Workspace Attachment 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                        <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-03</span>
+                        <span class="text-xs text-white">🔍</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                    <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/614647785_122155998974638916_2110671567267157041_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEOhHWcXk0dO0YV4TeJlSlnzD_5SA4uRbHMP_lIDi5FsSjH62Jx6i3EGisuU9zzrNp-PxL7DtuI92uxpPBwrJp6&_nc_ohc=s_LNxGUJ0WUQ7kNvwE0QjOs&_nc_oc=AdrkK5BjcGVWZv4w4K5Ke_hqf7C_1NSKqwHvQk1BZI0tfpxjVmPkPhhrCJyzi3ZrCaE&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=lkwb1xb5XyfKRhrBAjLWBQ&_nc_ss=7b2a8&oh=00_Af85jyHa46xNosbSogXbGrzVNguhPB31cGg9YR_nmn3QGg&oe=6A353A14" alt="Workspace Attachment 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                        <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-04</span>
+                        <span class="text-xs text-white">🔍</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                    <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/615156355_122155926236638916_5163766294581357494_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEBHUGEFZ7uS6UygDL-AT44I2jXjx2YFXkjaNePHZgVeaQFokQP9LcZioQ_W-wDa2huwUnFGACcZ_TQ3eGk3LI7&_nc_ohc=lZB_OnT1YkYQ7kNvwH-IRBU&_nc_oc=Adp-SrYnbCRL-cST6IPC_jQUgr6t11XbmC7uGZPansInfF87GELocv9FxC3je2Ph6x8&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=WxbVXw_qUGmp3zB7jajgQQ&_nc_ss=7b2a8&oh=00_Af9ZzkVLzAA6kPXmiJfl50NurKZeyYiKnTwJSg31UOV3ig&oe=6A3536F7" alt="Workspace Attachment 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                        <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-05</span>
+                        <span class="text-xs text-white">🔍</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                    <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/615557036_122155861640638916_7522617195652333396_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGm_AN3J7wu8ti0-GWybxPQ1YaCtF-1SVvVhoK0X7VJWxk3_VqvAkVR2Clgjkp4Hy1N18KAp3NWaiWU_n9dbzrl&_nc_ohc=YYKQ1Ck5fEsQ7kNvwGTo3R_&_nc_oc=Adr9OxAhyYwhL31Gih4fy6_bx2Y8kgejHPI7hAs_rVnkRC1vQFyefvKHksKCTLI2hmU&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&_nc_gid=IQWZ0HjqS0Y-NEK2g8NfoQ&_nc_ss=7b2a8&oh=00_Af879Ddz9BWzAc2q-LUsRQP4v31I-uFKDwKdNDqKVgMVxw&oe=6A35169A" alt="Workspace Attachment 6" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                        <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-06</span>
+                        <span class="text-xs text-white">🔍</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                    <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/611463555_122155434470638916_8801074525674474389_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGioKbK6gSHTxZzzawfkPSc1m7GVi5al_bWbsZWLlqX9sX4eKYF-lvDsmUYLer_wPnf215yvZJmlIrBkvg5EDSO&_nc_ohc=-WuW6R44k7IQ7kNvwEonJ_I&_nc_oc=AdpgfVqELHpuUj2w55hT4xF-oLoZRemgWmKN-MoRNskNHvZ5ku7GgsWYGFyF02WP2_o&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&_nc_gid=hrReXyxF1u89Zw895X3iTg&_nc_ss=7b2a8&oh=00_Af8GtvysRAJ5RLSPtrxkgwYY7HIt0oPwYBkYl_EwPZIQrQ&oe=6A351776" alt="Workspace Attachment 7" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                        <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-07</span>
+                        <span class="text-xs text-white">🔍</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer shadow-md" onclick="openExpandedViewer(this)">
+                    <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/599181529_122153243294638916_8745681575030997463_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEUlLV8CuF0DHWoUgu3UQ2E9YnAG4u5sPD1icAbi7mw8MnnaByCvSWi0aQorrD6C0Y1MopYILEttzqcOcIB9bGb&_nc_ohc=441KbCFMkNkQ7kNvwHI9H_A&_nc_oc=Ado4RO2HHoBaICtReYK76O9sBG3pDtvT0wrm7JvZOYqoqebvnxbrdO9SfL1d90_v0Nk&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=bOP0ipeA5Uny0XfElva97A&_nc_ss=7b2a8&oh=00_Af-ItPZEd5V23xxsTsAAsLO6moDzbNlPn3zXUD_6OSmRPg&oe=6A352E2E" alt="Workspace Attachment 8" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 selection:bg-transparent">
+                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 flex items-center justify-between p-3 transition-opacity">
+                        <span class="text-[10px] font-bold bg-fuchsia-600 px-2 py-0.5 rounded text-white">IMG-08</span>
+                        <span class="text-xs text-white">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="mb-14 scroll-mt-6">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-[10px] font-bold uppercase tracking-widest text-blue-400 bg-blue-950 border border-blue-900/50 px-3 py-1 rounded-md">Category 01</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div>
+                <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Executive Summary</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <h3 class="text-sm font-bold text-slate-200 mb-3 flex items-center gap-2">
+                        <span class="w-1.5 h-3 bg-blue-500 rounded-full"></span> Profile Narrative
+                    </h3>
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed font-light">
+                        I am a highly driven Office Administration specialist focusing extensively on modern business architecture, system efficiency protocols, and technical business data operations. Passionate about engineering automated structural pipelines inside modern corporate work systems.
+                    </p>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-200 mb-2">Roots & Background</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed font-light">
+                            Born in <strong class="font-semibold text-slate-200">Bukidnon</strong> and forged in <strong class="font-semibold text-slate-200">Ozamiz City</strong>, I follow operational systems that enhance team production and efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                    <h3 class="text-sm font-bold text-slate-200 mb-4 flex items-center gap-2">Skills</h3>
+                    <ul class="space-y-3.5 text-xs text-slate-400">
+                        <li class="flex gap-2.5"><span class="text-blue-400 font-bold">&bull;</span> <span><strong class="text-slate-200 font-medium">Problem Solving</strong></span></li>
+                        <li class="flex gap-2.5"><span class="text-blue-400 font-bold">&bull;</span> <span><strong class="text-slate-200 font-medium">Editing</strong></span></li>
+                        <li class="flex gap-2.5"><span class="text-blue-400 font-bold">&bull;</span> <span><strong class="text-slate-200 font-medium">Coding</strong></span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-950 to-blue-950 border border-blue-900/30 text-slate-200 p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between shadow-xl">
+                    <div class="absolute right-0 top-0 w-24 h-24 bg-blue-500/5 rounded-full blur-xl"></div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white mb-2">Target Milestones</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
+                            Currently training to scale up as a recognized <strong class="text-blue-400 font-medium">Certified Administrative Professional</strong>. Driven to deploy automated database assets into high-performance enterprise platforms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="socials" class="mb-14 scroll-mt-6">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-[10px] font-bold uppercase tracking-widest text-indigo-400 bg-indigo-950 border border-indigo-900/50 px-3 py-1 rounded-md">Category 02</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div>
+                <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Connectivity Profiles Matrix</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <a href="https://www.facebook.com/prince.salvani.4" target="_blank" class="flex flex-col justify-between p-4 bg-slate-950 border border-slate-800 hover:border-blue-500/30 rounded-2xl transition-all group shadow-md">
+                    <span class="text-xl">📘</span>
+                    <div class="mt-4">
+                        <p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Facebook</p>
+                        <p class="text-white text-xs font-semibold mt-0.5 group-hover:text-blue-400 transition-colors">@Jael Salvani</p>
+                    </div>
+                </a>
+                <a href="https://www.tiktok.com/@jaelsalvani" target="_blank" class="flex flex-col justify-between p-4 bg-slate-950 border border-slate-800 hover:border-pink-500/30 rounded-2xl transition-all group shadow-md">
+                    <span class="text-xl">🎵</span>
+                    <div class="mt-4">
+                        <p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Tiktok</p>
+                        <p class="text-white text-xs font-semibold mt-0.5 group-hover:text-pink-400 transition-colors">@Jaelsalvani</p>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/jaelsalvani/" target="_blank" class="flex flex-col justify-between p-4 bg-slate-950 border border-slate-800 hover:border-purple-500/30 rounded-2xl transition-all group shadow-md">
+                    <span class="text-xl">📸</span>
+                    <div class="mt-4">
+                        <p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Instagram</p>
+                        <p class="text-white text-xs font-semibold mt-0.5 group-hover:text-purple-400 transition-colors">@Jael Salvani</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="pb-12">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-[10px] font-bold uppercase tracking-widest text-slate-400 bg-slate-950 border border-slate-800 px-3 py-1 rounded-md">Category 03</h2>
+                <div class="h-px bg-slate-800 flex-grow"></div>
+                <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Credentials Log</span>
+            </div>
+
+            <div class="space-y-4 mb-8">
+                <div class="bg-slate-950 border border-slate-800/80 p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-blue-500/30 transition-all duration-300">
+                    <div>
+                        <span class="text-[9px] font-bold text-blue-400 uppercase tracking-widest bg-blue-950 border border-blue-900/30 px-2 py-0.5 rounded">Higher Ed</span>
+                        <h4 class="text-sm font-bold text-white mt-1.5">Bachelor of Science in Office Administration</h4>
+                        <p class="text-xs text-slate-400 font-medium mt-0.5">University of Antique &bull; <span class="italic text-slate-500 font-mono">2026 - Present</span></p>
+                        <p class="text-xs text-slate-500 mt-2 font-light"><strong class="font-medium text-slate-400">Core Engine Focus:</strong> Systems Apps, Record Lifecycles, Keyboarding, Business Ethics.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800/80 p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-indigo-500/30 transition-all duration-300">
+                    <div>
+                        <span class="text-[9px] font-bold text-indigo-400 uppercase tracking-widest bg-indigo-950 border border-indigo-900/30 px-2 py-0.5 rounded">Secondary Matrix</span>
+                        <h4 class="text-sm font-bold text-white mt-1.5">Senior & Junior High School Credentials</h4>
+                        <p class="text-xs text-slate-400 font-medium mt-0.5">Ozamiz City National High School &bull; <span class="italic text-slate-500 font-mono">Graduated 2020 - 2022</span></p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800/80 p-5 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 hover:border-slate-700 transition-all duration-300">
+                    <div>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest bg-slate-900 border border-slate-800 px-2 py-0.5 rounded">Primary Track</span>
+                        <h4 class="text-sm font-bold text-white mt-1.5">Elementary Foundation Matrix</h4>
+                        <p class="text-xs text-slate-400 font-medium mt-0.5">Aureliana Elementary School &bull; <span class="italic text-slate-500 font-mono">Graduated 2016</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-3.5">Hobbies</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Gaming</span>
+                    <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Playing Intrument</span>
+                    <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Basketball</span>
+                    <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Playing Chess</span>
+                    <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Playing Baminton</span>
+                    <span class="bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm">Playing  Table tennis</span>
+                </div>
+            </div>
+
+            <div class="bg-slate-950 border border-slate-800/80 p-6 rounded-2xl shadow-xl">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Acreds & Special Distinctions</h3>
+                <div class="grid grid-cols-1 gap-2.5 text-xs text-slate-300">
+                    <div class="flex items-center gap-3.5 p-3 bg-amber-500/5 rounded-xl border border-amber-500/10">
+                        <span class="text-amber-500 text-sm">🏆</span>
+                        <span class="text-slate-400 italic">With Honor in Grade 7</span>
+                    </div>
+                    <div class="flex items-center gap-3.5 p-3 bg-blue-500/5 rounded-xl border border-blue-500/10">
+                        <span class="text-blue-400 text-sm">📜</span>
+                        <span>Certificate of Particifation In Fine Dinning Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 pt-4 border-t border-slate-800/40 text-center">
+            <span class="text-[9px] text-slate-600 font-mono">System Core Terminal &copy; 2026</span>
+        </div>
+        
+    </main>
+</div>
+
+<div id="photoLightbox" class="hidden fixed inset-0 z-[100] bg-slate-950/90 backdrop-blur-md flex flex-col items-center justify-center p-4 transition-all duration-300" onclick="closeExpandedViewer()">
+    <button class="absolute top-6 right-6 bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 w-10 h-10 rounded-full flex items-center justify-center text-lg shadow-xl cursor-pointer select-none">&times;</button>
+    <img id="lightboxImage" src="" alt="Expanded Preview" class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl border border-slate-800 transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+</div>
+
+<script src="jns.js"></script>
+</body>
+</html>
